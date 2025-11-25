@@ -22,6 +22,7 @@ const Home = () => {
                 <Link to="/reflection">
                     <button
                         style={{
+                            width: "30vh",
                             display: "inline-block",
                             textDecoration: "none",
                             backgroundColor: "var(--color-2)",
@@ -58,6 +59,8 @@ const Home = () => {
                 <Link to="/resume">
                     <button
                         style={{
+                            width: "30vh",
+
                             display: "inline-block",
                             textDecoration: "none",
                             backgroundColor: "var(--color-2)",
@@ -86,6 +89,8 @@ const Home = () => {
                 <Link to="/works">
                     <button
                         style={{
+                            width: "30vh",
+
                             display: "inline-block",
                             textDecoration: "none",
                             backgroundColor: "var(--color-2)",
