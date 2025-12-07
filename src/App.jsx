@@ -11,12 +11,15 @@ import FooterCom from "./components/FooterCom/FooterCom.jsx";
 import Resume from "./Pages/resume/resume.jsx";
 import Works from "./Pages/work/work.jsx";
 import Reflection from "./Pages/reflection/Reflection.jsx";
+import BotCom from "./components/BotCom.jsx";
 
 
 function App() {
 
     return (
         <div className="app">
+            <BotCom/>
+
             <ScrollToTop/>
             <NavbarCom/>
             <main className="main-app">

@@ -9,9 +9,10 @@ import "../Pages.css"
 const Home = () => {
     return (
         <div>
+
             <HomeCom />
             <br />
-            {/* Reflection Section */}
+             {/*Reflection Section*/}
             <div className="reflection-intro" style={{ textAlign: "center", margin: "2rem 0", maxWidth: "700px", marginLeft: "auto", marginRight: "auto" }}>
                 <h2 style={{ color: "var(--color-title)", marginBottom: "1rem", fontFamily: "var(--font-main)" }}>
                     Reflection / Professional Statement
@@ -41,6 +42,9 @@ const Home = () => {
                     </button>
                 </Link>
             </div>
+
+
+
             <br />
 
             <AboutCom />
@@ -48,7 +52,6 @@ const Home = () => {
 
 
 
-            {/* Resume hidden — replaced with button */}
             <div className="resume-div" style={{ textAlign: "center", margin: "2rem 0" }}>
                 <div style={{ textAlign: "center", margin: "2rem 0" }}>
                     <p className="resume" >
