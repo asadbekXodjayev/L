@@ -16,8 +16,8 @@ const Home = () => {
             <AboutCom />
             <br />
 
-          
-            <WorkCom works={worksData.slice(0, 1)} />
+            {/* Show only the first work */}
+            <WorkCom works={worksData.slice(13, 15)} />
 
             <div style={{ textAlign: "center" }}>
                 <Link to="/works">
