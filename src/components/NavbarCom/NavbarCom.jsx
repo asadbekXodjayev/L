@@ -37,13 +37,8 @@ const NavbarCom = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/works" onClick={closeMobileMenu}>Works</Link>
                         </li>
-                        <li className="nav-item">
+ 
 
-                            <Link className="nav-link" to="/reflection" onClick={closeMobileMenu}>Reflection</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/resume" onClick={closeMobileMenu}>Resume</Link>
-                        </li>
 
 
                     </ul>
