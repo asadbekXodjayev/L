@@ -4,13 +4,14 @@ This guide explains everything you need to do to make your portfolio appear in G
 
 ## Target Keywords
 
-| Primary Keywords | Brand Keywords | Portfolio Keywords |
-|-----------------|----------------|-------------------|
-| Lobar Jabborova | dazzling | lobarsdiary |
-| Lobar photographer | medelame | lobars portfolio |
-| Lobar media | labelume | jabborovas portfolio |
-| Lobar's Diary | 01l24 | lobar jabborova portfolio |
-| loabrsdiary.uz | sun | |
+| Primary Keywords | Brand Keywords | Portfolio Keywords | Website Keywords |
+|-----------------|----------------|-------------------|------------------|
+| Lobar Jabborova | dazzling | lobarsdiary | Lobars page |
+| Lobar photographer | medelame | lobars portfolio | lobars web portfolio |
+| Lobar media | labelume | jabborovas portfolio | lobars web page |
+| Lobar's Diary | 01l24 | lobar jabborova portfolio | lobars website |
+| loabrsdiary.uz | sun | | |
+| | princess quenn | | |
 
 ---
 
@@ -20,6 +21,7 @@ The following files have been created/updated in your project:
 
 ### 1. `index.html` - SEO Meta Tags
 - Primary meta tags (title, description, keywords)
+- Google Site Verification meta tag
 - Open Graph tags for social media sharing
 - Twitter Card tags
 - Schema.org structured data for Person and PhotographyBusiness
@@ -32,8 +34,12 @@ The following files have been created/updated in your project:
 ### 3. `public/robots.txt` - Crawler Instructions
 - Tells search engines which pages to crawl
 - Points to your sitemap location
+- Allows Google verification file
 
-### 4. `vercel.json` - Headers Configuration
+### 4. `public/google88802942aba4eed0.html` - Google Verification File
+- Domain verification file from Google Search Console
+
+### 5. `vercel.json` - Headers Configuration
 - Proper cache control for SEO files
 - Optimized image caching
 
@@ -76,6 +82,16 @@ vercel deploy --prod
    - **Value:** `google-site-verification=abc123...` (copy from GSC)
 4. Wait 24-48 hours for DNS propagation
 5. Click **"Verify"** in Search Console
+
+**Alternative - HTML File Upload Method:**
+1. Upload `google88802942aba4eed0.html` to your domain root
+2. After deployment, verify it's accessible at: `https://loabrsdiary.uz/google88802942aba4eed0.html`
+3. Click **"Verify"** in Search Console
+
+**Note:** The Google site verification meta tag is already added to `index.html`:
+```html
+<meta name="google-site-verification" content="LaXKjCSzhywkvxpzhN0CHttFtRfw_YHqE-qcTWGeT2s" />
+```
 
 ---
 
@@ -135,12 +151,17 @@ This is CRUCIAL for appearing when people search "Lobar photographer" or "Lobar 
 | **lobars portfolio** | In meta keywords |
 | **jabborovas portfolio** | In Schema alternateName, meta keywords |
 | **lobar jabborova portfolio** | In meta keywords, description |
+| **Lobars page** | In Schema alternateName, meta keywords |
+| **lobars web portfolio** | In Schema alternateName, meta keywords |
+| **lobars web page** | In Schema alternateName, meta keywords |
+| **lobars website** | In Schema alternateName, meta keywords |
 | **loabrsdiary.uz** | In meta keywords, domain reference |
 | **dazzling** | In Schema.org Brand, keywords meta tag |
 | **medelame** | In Schema.org Brand, keywords meta tag |
 | **labelume** | In Schema.org Brand, keywords meta tag |
 | **01l24** | In Schema.org Brand, keywords meta tag |
 | **sun** | In Schema.org Brand, keywords meta tag |
+| **princess quenn** | In Schema alternateName, keywords meta tag, Brand |
 
 ---
 
@@ -219,9 +240,11 @@ In Google Search Console, check:
 
 ## ✅ Quick Checklist
 
-- [ ] Deploy website to `loabrsdiary.uz`
+- [x] Deploy website to `loabrsdiary.uz`
+- [x] Google site verification meta tag added
+- [x] Google verification HTML file in public folder
 - [ ] Add site to Google Search Console (`loabrsdiary.uz`)
-- [ ] Verify domain ownership via DNS
+- [ ] Verify domain ownership via DNS or HTML file
 - [ ] Submit `sitemap.xml`
 - [ ] Request indexing for main pages
 - [ ] Create Google Business Profile with website `loabrsdiary.uz`

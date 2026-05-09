@@ -4,6 +4,9 @@
 User-agent: *
 Allow: /
 
+# Allow Google verification file
+Allow: /google88802942aba4eed0.html
+
 # Sitemap location
 Sitemap: https://loabrsdiary.uz/sitemap.xml
 
