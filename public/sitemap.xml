@@ -5,7 +5,7 @@
   
   <!-- Main Homepage -->
   <url>
-    <loc>https://loabrsdiary.uz/</loc>
+    <loc>https://lobarsdiary.uz/</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://loabrsdiary.uz/about</loc>
+    <loc>https://lobarsdiary.uz/about</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +21,7 @@
   
   <!-- Portfolio/Works Page -->
   <url>
-    <loc>https://loabrsdiary.uz/works</loc>
+    <loc>https://lobarsdiary.uz/works</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -29,7 +29,7 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://loabrsdiary.uz/contact</loc>
+    <loc>https://lobarsdiary.uz/contact</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -37,31 +37,37 @@
   
   <!-- Brand Pages -->
   <url>
-    <loc>https://loabrsdiary.uz/dazzling</loc>
+    <loc>https://lobarsdiary.uz/dazzling</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loabrsdiary.uz/medelame</loc>
+    <loc>https://lobarsdiary.uz/medelame</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loabrsdiary.uz/labelume</loc>
+    <loc>https://lobarsdiary.uz/labelume</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loabrsdiary.uz/01l24</loc>
+    <loc>https://lobarsdiary.uz/01l24</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://loabrsdiary.uz/sun</loc>
+    <loc>https://lobarsdiary.uz/sun</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lobarsdiary.uz/princess-queen</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -69,13 +75,13 @@
   
   <!-- Portfolio Brand Pages -->
   <url>
-    <loc>https://loabrsdiary.uz/lobarsdiary</loc>
+    <loc>https://lobarsdiary.uz/lobarsdiary</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://loabrsdiary.uz/portfolio</loc>
+    <loc>https://lobarsdiary.uz/portfolio</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
