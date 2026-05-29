@@ -153,6 +153,19 @@ export const worksData = [
     },
     {
         category: "Street Shoot",
+        title: "Japanese Garden, September 2025",
+        photos: [
+            { src: "/works/garden1.jpg", alt: "Japanese Garden" },
+            { src: "/works/garden2.jpg", alt: "Japanese Garden" },
+            { src: "/works/garden3.jpg", alt: "Japanese Garden" },            
+            { src: "/works/garden4.jpg", alt: "Japanese Garden" },
+            { src: "/works/garden5.jpg", alt: "Japanese Garden" },
+            { src: "/works/garden6.jpg", alt: "Japanese Garden" },
+            { src: "/works/garden7.jpg", alt: "Japanese Garden" },
+        ],
+    },
+    {
+        category: "Street Shoot",
         title: "Sabina, September 2025",
         photos: [
             { src: "/works/photo_27_2025-11-15_22-38-48.jpg", alt: "Sabina" },
@@ -175,6 +188,35 @@ export const worksData = [
         photos: [
             { src: "/works/photo_37_2025-11-15_22-38-48.jpg", alt: "Marjona" },
             { src: "/works/photo_38_2025-11-15_22-38-48.jpg", alt: "Marjona" },
+        ],
+    },
+    {
+        category: "Street Shoot",
+        title: "Shohsanam, March 2026",
+        photos: [
+            { src: "/works/mart1.jpg", alt: "Shohsanam" },
+            { src: "/works/mart2.jpg", alt: "Shohsanam" },
+            { src: "/works/mart3.jpg", alt: "Shohsanam" },
+            { src: "/works/mart4.jpg", alt: "Shohsanam" },
+            { src: "/works/mart5.jpg", alt: "Shohsanam" },
+            { src: "/works/mart6.jpg", alt: "Shohsanam" },
+            { src: "/works/mart7.jpg", alt: "Shohsanam" },
+        ],
+    },
+    {
+        category: "Commercial",
+        title: "seevlyn, May 2026",
+        photos: [
+            { src: "/works/May1.jpg", alt: "seevlyn" },
+            { src: "/works/May2.jpg", alt: "seevlyn" },
+            { src: "/works/May3.jpg", alt: "seevlyn" },
+            { src: "/works/May4.jpg", alt: "seevlyn" },
+            { src: "/works/May5.jpg", alt: "seevlyn" },
+            { src: "/works/May6.jpg", alt: "seevlyn" },
+            { src: "/works/May7.jpg", alt: "seevlyn" },
+            { src: "/works/May8.jpg", alt: "seevlyn" },
+            { src: "/works/May9.jpg", alt: "seevlyn" },
+            { src: "/works/May10.jpg", alt: "seevlyn" },
         ],
     },
 ];
