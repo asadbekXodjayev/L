@@ -149,17 +149,15 @@ ul {
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--backround-color);
-    background: var(--color-1-darker);
+    background: #8A6B4E;
     box-shadow: 0 5px 16px rgba(152, 173, 130, 0.4);
     cursor: pointer;
     transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    background: var(--color-1-dark);
+    background: #8A6B3e;
     box-shadow: 0 9px 22px rgba(126, 146, 104, 0.45);
-    border: 1px solid var(--color-1) !important;
 }
 
 .btn:focus-visible {
