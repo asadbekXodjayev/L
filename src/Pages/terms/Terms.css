@@ -1,0 +1,79 @@
+.terms-page {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem 3rem;
+    font-family: var(--font-main);
+}
+
+.terms-card {
+    width: 100%;
+    max-width: 780px;
+    background: var(--surface);
+    border: 1px solid rgba(232, 163, 61, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(98, 77, 56, 0.16);
+    padding: 1rem 2.5rem 2.5rem;
+    color: var(--color-title);
+}
+
+.terms-intro {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--color-2);
+    max-width: 60ch;
+    margin: 0 auto 1.5rem;
+}
+
+.terms-section {
+    margin-bottom: 1.6rem;
+}
+
+.terms-section h2 {
+    font-size: 1.4rem;
+    color: var(--sun-amber);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sun-gold);
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.terms-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+}
+
+.terms-section a {
+    color: var(--sun-amber);
+    text-decoration: underline;
+}
+
+/* Highlight the privacy/data section */
+.terms-privacy {
+    background: linear-gradient(135deg, rgba(240, 195, 109, 0.16), rgba(232, 163, 61, 0.06));
+    border-left: 4px solid var(--sun-gold);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+}
+
+.terms-privacy h2 {
+    margin-top: 0;
+}
+
+.terms-updated {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-2-light);
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .terms-card {
+        padding: 0.5rem 1.5rem 2rem;
+    }
+    .terms-intro { font-size: 1.1rem; }
+    .terms-section h2 { font-size: 1.2rem; }
+    .terms-section p { font-size: 1rem; }
+}

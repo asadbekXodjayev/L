@@ -1,5 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Parisienne&display=swap');
 
+/* ============================================================
+   DESIGN TOKENS — single source of truth (sun-warmed palette)
+   ============================================================ */
+:root {
+    /* — Original earthy palette (kept) — */
+    --color-accent-dark: rgb(105, 105, 105);
+    --color-1: #B7C9A3;        /* light green */
+    --color-1-light: #D4E1C3;  /* very light green */
+    --color-1-dark: #98AD82;   /* darker green */
+    --color-1-darker: #7E9268; /* deeper green (button hover) */
+    --color-2: #8A6B4E;        /* earthy brown/tan */
+    --color-2-light: #B4997C;
+    --color-2-dark: #624D38;   /* dark brown */
+    --color-title: #2F1E15;    /* near-black warm brown text */
+
+    /* — Sun accents (new, but in the same warm family) — */
+    --sun-gold: #E8A33D;
+    --sun-amber: #D98324;
+    --sun-honey: #F0C36D;
+    --sun-terracotta: #C2410C;
+
+    /* — Background — keep the original cream; alias the historical misspelling — */
+    --backround-color: #F4EDE3;        /* legacy (misspelled) — still referenced widely */
+    --backround-color-hover: #E4D8C7;
+    --background-color: #F4EDE3;        /* correctly-spelled alias */
+    --surface: #FBF6EC;                 /* lifted card surface */
+
+    /* — Fonts — */
+    --font-main: 'Cormorant Garamond', serif;
+    --font-script: 'Parisienne', cursive;
+
+    /* — Reusable sun glow (radial, transparent edges) — */
+    --sun-glow: radial-gradient(
+        circle at 50% -10%,
+        rgba(240, 195, 109, 0.45) 0%,
+        rgba(240, 195, 109, 0.18) 28%,
+        rgba(244, 237, 227, 0) 60%
+    );
+}
+
+/* ============================================================
+   DARK / NIGHT THEME — dark blue palette
+   ============================================================ */
+:root[data-theme="dark"] {
+    --color-1: #8FB58A;        /* slightly brighter green for contrast on navy */
+    --color-1-light: #A9CBA3;
+    --color-1-dark: #6E9E78;
+    --color-1-darker: #5C8867;
+
+    --color-2: #AFBDD6;        /* light blue-grey (was earthy brown) */
+    --color-2-light: #93A4C2;
+    --color-2-dark: #C9D5EA;   /* used widely as text/nav — keep light */
+    --color-title: #EAF1FB;    /* primary text */
+
+    --backround-color: #0B1626;        /* deep navy */
+    --backround-color-hover: #122039;
+    --background-color: #0B1626;
+    --surface: #16243F;                /* elevated card */
+
+    /* a cool moonlit glow instead of the warm sun glow */
+    --sun-glow: radial-gradient(
+        circle at 50% -10%,
+        rgba(96, 140, 210, 0.40) 0%,
+        rgba(96, 140, 210, 0.16) 30%,
+        rgba(11, 22, 38, 0) 62%
+    );
+}
 
 * {
     margin: 0;
@@ -7,39 +74,48 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--sun-gold);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--backround-color-hover);
 }
 
 body {
-    position: sticky;
-    top: 0;
-    z-index: 1;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #F4EDE3;
-    font-family: 'Cormorant Garamond', serif !important;
-}
-
-@media (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
+    /* faint sun-glow over the cream, fixed so it reads like ambient light */
+    background:
+        var(--sun-glow),
+        var(--backround-color);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--color-title);
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    border: 1px solid var(--color-primary) !important;
+    transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+    font-family: var(--font-main);
 }
 
 .app {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -52,8 +128,55 @@ ul {
 }
 
 .main-app {
-    margin-top: 10vh;
+    margin-top: max(80px, 10vh);
+    flex: 1;
     background: transparent !important;
+}
+
+/* ============================================================
+   Shared button (green)
+   ============================================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.6rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-family: var(--font-main);
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--backround-color);
+    background: var(--color-1-darker);
+    box-shadow: 0 5px 16px rgba(152, 173, 130, 0.4);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: var(--color-1-dark);
+    box-shadow: 0 9px 22px rgba(126, 146, 104, 0.45);
+    border: 1px solid var(--color-1) !important;
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--color-1);
+    outline-offset: 2px;
+}
+
+/* Gently rotating sun (used where a subtle motion suits) */
+@keyframes sun-spin {
+    to { transform: rotate(360deg); }
+}
+.sun-spin {
+    animation: sun-spin 60s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .sun-spin { animation: none; }
 }
 
 @media (max-width: 769px) {
@@ -61,7 +184,6 @@ ul {
         margin-top: 1rem;
         font-size: 32px;
     }
-
     p {
         font-size: 17px;
     }

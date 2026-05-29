@@ -1,13 +1,16 @@
 import React from 'react';
 import AboutCom from "../../components/AboutCom/AbourtCom.jsx";
+import SunDivider from "../../components/SunIcon/SunDivider.jsx";
+import PageFade from "../../components/Motion/PageFade.jsx";
 
 const About = () => {
     return (
-        <div>
-           <AboutCom/>
-             <br/>
+        <PageFade>
+            <SunDivider label="about me" />
+            <AboutCom/>
             <br/>
-        </div>
+            <br/>
+        </PageFade>
     );
 };
 

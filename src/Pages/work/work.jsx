@@ -1,11 +1,14 @@
 import React from 'react';
 import WorkCom from "../../components/WorkCom/WorkCom.jsx";
+import SunDivider from "../../components/SunIcon/SunDivider.jsx";
+import PageFade from "../../components/Motion/PageFade.jsx";
 
 const Works = () => {
     return (
-        <div>
+        <PageFade>
+            <SunDivider label="works" />
             <WorkCom/>
-        </div>
+        </PageFade>
     );
 };
 

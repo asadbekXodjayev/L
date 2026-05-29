@@ -1,20 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap');
 
-/* --- Custom Color Variables (User Defined) --- */
-:root {
-    --color-accent-dark: rgb(105, 105, 105);
-    --color-1-: #B7C9A3; /* Light Green */
-    --color-1-light: #D4E1C3; /* Very Light Green */
-    --color-1-dark: #98AD82; /* Darker Green */
-    --color-2: #8A6B4E; /* Earthy Brown/Tan */
-    --color-2-light: #B4997C; /* Light Brown/Tan */
-    --color-2-dark: #624D38; /* Dark Brown */
-    --color-title: #2F1E15; /* Very Dark Brown/Text */
-    --backround-color: #F4EDE3; /* Page Background */
-    --backround-color-hover: #E4D8C7;
-    --rubric-color: #991f1f; /* Red for emphasis/rubrics */
-}
+/* Design tokens live in src/index.css (single source of truth). */
 
 /* --- General Container and Swiper Setup --- */
 .about-container {

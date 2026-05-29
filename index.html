@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/img.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Apply saved color theme before paint (avoids flash) -->
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="LaXKjCSzhywkvxpzhN0CHttFtRfw_YHqE-qcTWGeT2s" />
@@ -41,8 +56,8 @@
     <meta name="twitter:creator" content="@lobar_jabborova">
     
     <!-- Additional SEO Tags -->
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#E8A33D">
+    <meta name="msapplication-TileColor" content="#E8A33D">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
