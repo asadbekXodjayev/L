@@ -76,6 +76,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -91,9 +93,11 @@ body::-webkit-scrollbar-track {
 
 body {
     width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     /* faint sun-glow over the cream, fixed so it reads like ambient light */
     background:
         var(--sun-glow),
