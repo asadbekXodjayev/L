@@ -93,8 +93,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 666px;
-    height: 666px;
+    width: 20rem;
+    height: 20rem;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background: repeating-conic-gradient(
